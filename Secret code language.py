@@ -21,6 +21,6 @@ def decoded(message):
     print("Decoded:", result)
 
 
-message = "enter youre message"
+message = input("enter you^re message:")
 encode(message)
 decoded(message)
