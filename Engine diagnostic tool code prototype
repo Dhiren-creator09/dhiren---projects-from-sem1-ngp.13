@@ -1,0 +1,11 @@
+# code for testing engine's performance via ECU
+def ecu():
+    rpm1 = int(input("enter you^re engine idle rpm :"))
+    rpm2 = int(input("enter you^reb eenigne driving rpm:"))
+    if 600 <= rpm1 <= 1000 and 1500 <= rpm2 <= 3000:
+        print("you^re engine is  inright state ")
+        elif rpm1 < 600 or rpm1 > 1500 or rpm2 < 1500 or rpm2 < 7000  :
+            print("yo^re engine parts needs immmediate insprction! ")
+        else:
+            print("you^re engibne is working but reports are unsual comeback for inspection")
+    ecu()        
