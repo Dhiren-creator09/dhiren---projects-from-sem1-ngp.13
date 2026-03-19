@@ -1,11 +1,41 @@
 # code for testing engine's performance via ECU
+#code for testing engine's performance via ECU
 def ecu():
     rpm1 = int(input("enter you^re engine idle rpm :"))
     rpm2 = int(input("enter you^reb eenigne driving rpm:"))
     if 600 <= rpm1 <= 1000 and 1500 <= rpm2 <= 3000:
         print("you^re engine is  inright state ")
-        elif rpm1 < 600 or rpm1 > 1500 or rpm2 < 1500 or rpm2 < 7000  :
-            print("yo^re engine parts needs immmediate insprction! ")
-        else:
+    elif rpm1 < 600 or rpm1 > 1500 and rpm2 < 1500 or rpm2 > 7000  :
+            print("yo^re engine parts needs immmediate inspection! ")
+    else:
             print("you^re engibne is working but reports are unsual comeback for inspection")
-    ecu()        
+            data1 = {
+                  "battery": float(input("Enter battery voltage: ")),
+                  "coolant_temp": float(input("Enter coolant temperature: ")),
+                  "throttle_pos": float(input("Enter throttle position: ")),
+                  "oil_pressure": float(input("Enter oil pressure: ")),
+                  "engine_load": float(input("Enter engine load: ")),
+                   "intake_temp": float(input("Enter intake temperature: ")),
+                   "fuel_psi": float(input("Enter fuel pressure (PSI): ")),
+                   "S_voltage": float(input("Enter oxygen sensor voltage: ")),
+            }
+            if 13.7 <= data1["battery"] >= 14.7 :
+                   print("battery volatge is nornal")
+            elif data1["battery"] < 13.7 or data1["battery"] > 14.7:
+                  print("battery volatge is low or high")       
+
+      
+     
+                   
+     
+    
+    
+     
+    
+
+
+
+      
+
+    
+    "eng
