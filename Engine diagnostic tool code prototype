@@ -20,22 +20,17 @@ def ecu():
                    "S_voltage": float(input("Enter oxygen sensor voltage: ")),
             }
             if 13.7 <= data1["battery"] >= 14.7 :
-                   print("battery volatge is nornal")
+                   print("battery volatge is normal")
             elif data1["battery"] < 13.7 or data1["battery"] > 14.7:
-                  print("battery volatge is low or high")       
-
+                  print("battery volatge is low or high, needs to immediately stop engine")
+            if 20.0 <= data1["coolant_temperature"] >= 60.0 and 90.0 <= data1["coolant_temperature"]>= 105.0:
+                print("engine have  a cold start and engine is currently is in normal condition")
+            elif 105.0 <= data1["coolant_temperature"] >= 110.0:
+                print("high temperature needs insp[ection")
+            elif 110.0 > data1["coolant_temperature"] or 70.0 < data1["coolant_temperature"]:
+                print("you^re engine coolant is out of ideal conditions needs to stop engine immediately")
+                
+                
+                
+        
       
-     
-                   
-     
-    
-    
-     
-    
-
-
-
-      
-
-    
-    "eng
