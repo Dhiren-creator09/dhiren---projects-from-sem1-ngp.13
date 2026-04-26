@@ -1,0 +1,16 @@
+import random
+k_k = ["rock","paper","scissors "]
+computer_s = random.choice(k_k)
+i = input("enter your move:").strip().lower()
+# rock paper siscoor game
+if i == computer_s :
+    print("Tie")
+elif i == "rock" and computer_s == "paper":
+    print("you lose")
+elif i == "scissor" and computer_s == "rock":
+    print("you lose")
+elif i == "paper "  and computer_s == "scissors":
+    print("you lose")
+else:
+    print("you win")
+print(i, computer_s)
